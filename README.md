@@ -1,12 +1,12 @@
-#Homework #5
+#Homework #5 <br>
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-#User Story
+#User Story <br>
 As an employee with a busy schedule
 I want to add important events to a daily planner
 So that I can manage my time effectively
 
-#Acceptance Criteria
+#Acceptance Criteria <br>
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar

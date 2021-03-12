@@ -12,34 +12,12 @@ todayDate.text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
 // WHEN I view the timeblocks for that day 
 // THEN each timeblock is color coded to indicate whether it is in the past,  present, or future
 
+var dt = new Date();
+var hr = dt.getHours();
 
+function checkPresent () {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 // add time blocks and make sure to color code them
-
-
-// get local storage info setup
-
-
-// work on the time/hour
-
-// update colors according to user input
-
-// save the inserts 
+// how to check whether it'll be past,present or future

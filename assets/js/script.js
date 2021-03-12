@@ -3,7 +3,7 @@
 var todayDate = $("#currentDay");
 todayDate.text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
 
-
+// add time blocks and make sure to color code them
 
 
 // get local storage info setup

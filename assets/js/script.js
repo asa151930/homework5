@@ -16,14 +16,14 @@ todayDate.text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
     console.log(currentEL.attr("id"));
 
     var id = currentEL.attr("id");
-    console.log(id.replace("hour_", ""));
+    console.log(id.replace("hour_", "")); 
 
-    id = id.replace("hour_", "");
+    id = id.replace("hour_", "");       // replaces the string with the number
 
-    var hr = moment().hour();
+    var hr = moment().hour(); // log in hours
     console.log(id, hr);
 
-    if (id < hr) {
+    if (id < hr) {          // timeblock gets color coded with past, present, and future
         currentEL.addClass("past");
     } else if (id == hour) {
         currentEL.addClass("present");
@@ -33,6 +33,3 @@ todayDate.text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
  })
 
 
-
-// add time blocks and make sure to color code them
-// how to check whether it'll be past,present or future

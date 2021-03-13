@@ -42,7 +42,7 @@ console.log(saveBtn);
 $(document).ready(function () {            // when the document is ready, set the click event on 
     
     $('.saveBtn').on('click', function () {       // function give us to do something after the click
-       var task = $(this).prev(); 
+       
     });
 });
 

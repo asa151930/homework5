@@ -62,7 +62,6 @@ $(document).ready(function () {         // when the document is ready, set the c
         console.log(hour);
         // save to local storage
         
-
         if (text !== "") { 
             localStorage.setItem(hour, text);
         } else {

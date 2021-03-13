@@ -14,7 +14,7 @@ body {
   }
   
   textarea{
-    background-color: transparent;
+    background: transparent;
     border: none;
     resize: none;
     color: #000000;
@@ -79,8 +79,5 @@ body {
     transition: all .3s ease-in-out;
   }
 
-  @media screen and (max-width: 768px), screen and (max-width: 575px) {
-
-  }
 
   

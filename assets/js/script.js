@@ -32,4 +32,20 @@ todayDate.text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
     }
  })
 
+// WHEN I click into a timeblock 
+// THEN I can enter an event 
+// WHEN I click the save button for that timeblock 
+// THEN the text for that event is saved in local storage 
+
+var saveBtn = $(".saveBtn");
+console.log(saveBtn);
+
+//$(document).ready(function (){
+  //  saveBtn = $(".saveBtn");
+    // save button event listener
+    //$("saveBtn").on("click", function (){
+        
+    //})
+
+//})
 

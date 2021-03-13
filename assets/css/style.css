@@ -14,7 +14,7 @@ body {
   }
   
   textarea{
-    background-color: lightgray;
+    background-color: transparent;
     border: none;
     resize: none;
     color: #000000;
@@ -77,6 +77,10 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px), screen and (max-width: 575px) {
+
   }
 
   

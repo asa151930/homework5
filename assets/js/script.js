@@ -8,15 +8,15 @@ todayDate.text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
 
 // WHEN I view the timeblocks for that day 
 // THEN each timeblock is color coded to indicate whether it is in the past,  present, or future
- var timeblock = $(".time-block");
- console.log(timeblock);
+var timeblock = $(".time-block");
+console.log(timeblock);
 
- timeblock.each(function () { // Loop started
+timeblock.each(function () { // Loop started
     var currentEL = $(this);
     console.log(currentEL.attr("id"));
 
     var id = currentEL.attr("id");
-    console.log(id.replace("hour_", "")); 
+    console.log(id.replace("hour_", ""));
 
     id = id.replace("hour_", "");       // replaces the string with the number
 
@@ -30,22 +30,27 @@ todayDate.text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
     } else {
         currentEL.addClass("future");
     }
- })
+})
 
 // WHEN I click into a timeblock 
 // THEN I can enter an event 
 // WHEN I click the save button for that timeblock 
 // THEN the text for that event is saved in local storage 
-
 var saveBtn = $(".saveBtn");
 console.log(saveBtn);
 
-//$(document).ready(function (){
-  //  saveBtn = $(".saveBtn");
-    // save button event listener
-    //$("saveBtn").on("click", function (){
-        
-    //})
+$(document).ready(function (event) {            // when the document is ready, set the click event on 
+    event.preventDefault();
+    $('.saveBtn').on('click', function () {       // function give us to do something after the click
+        var task = $(this).prev().val();
+        var time = $(this).parent().attr("id");
+        var completed = {
+            task: task,
+            time: time,
+        };
+        populateStorage(completed);
+    });
 
-//})
+    
+});
 

@@ -39,18 +39,11 @@ timeblock.each(function () { // Loop started
 var saveBtn = $(".saveBtn");
 console.log(saveBtn);
 
-$(document).ready(function (event) {            // when the document is ready, set the click event on 
-    event.preventDefault();
-    $('.saveBtn').on('click', function () {       // function give us to do something after the click
-        var task = $(this).prev().val();
-        var time = $(this).parent().attr("id");
-        var completed = {
-            task: task,
-            time: time,
-        };
-        populateStorage(completed);
-    });
-
+$(document).ready(function () {            // when the document is ready, set the click event on 
     
+    $('.saveBtn').on('click', function () {       // function give us to do something after the click
+       var task = $(this).prev(); 
+    });
 });
+
 
